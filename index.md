@@ -191,11 +191,7 @@ $$ x_1 = 0, x_2 = 3 $$
 </div>
 
 ---
-<div class="cabecalho">
-    Verificação
-</div>
-
-<iframe src="http://https://colab.research.google.com/drive/1Q2G-EcMHM5f6xgndqTE0aYh31dAnDH-P?usp=sharing/" width=100% height=100% ></iframe>
+<iframe src="https://colab.research.google.com/drive/1Q2G-EcMHM5f6xgndqTE0aYh31dAnDH-P?usp=sharing/" width=100% height=100% ></iframe>
 
 ---
 
