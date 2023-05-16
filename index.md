@@ -41,17 +41,6 @@ Belo Horizonte, 2023.
 
 ---
 ![bg opacity](./background.png)
-<div class="cabecalho">
-Roteiro
-</div>
-
-1. Definição;
-2. Aplicações;
-3. Classificação de problemas de Programação Inteira;
-4. Resolução do problema das namoradas por meio da força bruta;
-
----
-![bg opacity](./background.png)
 # Definição
 
 ---
@@ -163,7 +152,7 @@ window.MathJax = {
 };
 </script>
 <div class="cabecalho">
-Verificação
+Verificação da insuficiência do arredondamento
 </div>
 
 <div class="conteudo" style="margin-left: 30%; margin-right: 30%">
@@ -263,3 +252,5 @@ Um algoritmo de força bruta pode ser representado pelos seguintes passos:
 
 ---
 ![bg opacity](./background.png)
+<!--<iframe src="https://mybinder.org/v2/gh/DiegoAscanio/aula-4-PO-2/master?labpath=forca_bruta.ipynb" width=100% height=100% ></iframe>-->
+<iframe src="http://localhost:8888/notebooks/forca_bruta.ipynb" width=100% height=100% ></iframe>
