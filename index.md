@@ -184,8 +184,8 @@ $$ x_1 = 0, x_2 = 3 $$
 
 ---
 ![bg opacity](./background.png)
-<!--<iframe src="https://mybinder.org/v2/gh/DiegoAscanio/aula-4-PO-2/master?labpath=simplex_insuficiencias.ipynb" width=100% height=100% ></iframe>-->
-<iframe src="http://localhost:8888/notebooks/simplex_insuficiencias.ipynb" width=100% height=100% ></iframe>
+<iframe src="https://mybinder.org/v2/gh/DiegoAscanio/aula-4-PO-2/master?labpath=simplex_insuficiencias.ipynb" width=100% height=100% ></iframe>
+<!--<iframe src="http://localhost:8888/notebooks/simplex_insuficiencias.ipynb" width=100% height=100% ></iframe>-->
 
 ---
 ![bg opacity](./background.png)
@@ -252,5 +252,5 @@ Um algoritmo de força bruta pode ser representado pelos seguintes passos:
 
 ---
 ![bg opacity](./background.png)
-<!--<iframe src="https://mybinder.org/v2/gh/DiegoAscanio/aula-4-PO-2/master?labpath=forca_bruta.ipynb" width=100% height=100% ></iframe>-->
-<iframe src="http://localhost:8888/notebooks/forca_bruta.ipynb" width=100% height=100% ></iframe>
+<iframe src="https://mybinder.org/v2/gh/DiegoAscanio/aula-4-PO-2/master?labpath=forca_bruta.ipynb" width=100% height=100% ></iframe>
+<!--<iframe src="http://localhost:8888/notebooks/forca_bruta.ipynb" width=100% height=100% ></iframe>-->
