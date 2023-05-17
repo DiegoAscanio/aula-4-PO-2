@@ -40,8 +40,24 @@ Aula baseada sobre o material do professores Dr. João Fernando Machry Sarubbi (
 Belo Horizonte, 2023.
 
 ---
+<div class="cabecalho">
+Roteiro
+</div>
+
+<div class="conteudo">
+<ol>
+  <li>Definição, Classificação e Aplicações</li>
+  <li>Limitações do uso do SIMPLEX arredondado para solução de PI</li>
+  <li>Solução de problemas de programação inteira - Algoritmo Força Bruta</li>
+  <ol>
+    <li>Solução do problema das namoradas por força bruta</li>
+  </ol>
+</ol>
+</div>
+
+---
 ![bg opacity](./background.png)
-# Definição
+# Definição, Classificação e Aplicações
 
 ---
 ![bg opacity](./background.png)
@@ -57,26 +73,82 @@ A Programação Inteira pode ser entendida como um caso específico da Programa�
 <ul>
   <li>Também conhecida como Programação Linear Inteira</li>
   <!-- Pois, -->
-  <li>As variáveis devem ser inteiras.</li>
-  <ul>
-    <li>Algumas</li> <!-- Programação inteira mista -->
-    <li>Todas</li> <!-- Programação inteira pura -->
-  </ul>
+  <li>Ao menos uma, algumas ou todas variáveis devem ser inteiras.</li>
   <li>Porquê?</li>
   <!-- Porquê você não sai com sua namorada 4,44 vezes alguns poderiam dizer -->
   <!-- Mas para resolver isso é muito fácil, basta aplicar o arredondamento. Porém, -->
   <li>O arredondamento funciona em todos os casos?</li>
+  <ul><li>A ver mais a frente</li></ul>
 </ul>
 </div>
 
 ---
 ![bg opacity](./background.png)
 <div class="cabecalho">
+Programação Inteira - Classificação dos problemas.
+</div>
+<div class="conteudo">
+<p>
+Os problemas são classificados de acordo com o tipo de variáveis que possuem:
+</p>
+<br>
+<ul>
+  <li>Apenas variáveis inteiras;</li> <!-- programação inteira pura -->
+  <li>Variáveis inteiras e contínuas;</li> <!-- programação inteira mista -->
+  <li>Variáveis binárias \(0 / 1\);</li> <!-- programação inteira binária -->
+  <li>Variáveis inteiras genéricas;</li>
+</ul>
+</div>
+
+---
+![bg opacity](./background.png)
+<div class="cabecalho">
+Programação Inteira - Discussões
+</div>
+
+<div class="conteudo"> 
+<p>
+A priori, é discutível a aplicação prática da restrição de valores a números inteiros. Entretanto, como veremos nesta e nas próximas aulas, esta restrição constitui-se uma ferramenta muito poderosa para a resolução de problemas do mundo real.
+</p>
+<br>
+<p>
+Inclusive, grande parte das aplicações práticas da programação inteira são mais restritas ainda, aos problemas de programação binária, que representam (por exemplo) problemas de decisão do tipo comprar / não comprar, alocar / não alocar, vender / não vender, representações diversas, dentre outros.
+</p>
+</div>
+
+---
+![bg opacity](./background.png)
+<div class="cabecalho">
+Programação Inteira - Aplicações
+</div>
+<div class="conteudo">
+  <ul>
+    <li>Dimensionamento de lotes de itens a serem produzidos \( 0/1 \)</li>
+    <li>Custo fixo de produção \( 0/1 \)</li>
+    <li>Localização de plantas de produção / entregas \( 0/1 \)</li>
+    <li>Alocação de funcionários em restaurantes de uma cadeia de <i>fastfood</i> \( X \in Z \) </li>
+    <li>Seleção de itens para transporte (problema da mochila - PIB, PIP, PIM)</li>
+  </ul>
+  <br>
+  <p>Hoje, o foco da nossa aula encontra-se nos problemas inteiros puros genéricos, como o problema das namoradas, o problema da alocação de funcionários em restaurantes de fastfood, dentre outros.</p>
+</div>
+
+---
+![bg opacity](./background.png)
+# Limitações do uso do SIMPLEX arredondado para solução de PI
+
+---
+![bg opacity](./background.png)
+# De fato, os problemas de programação inteira podem ser "relaxados" à sua forma linear, serem resolvidos pelo SIMPLEX e serem novamente restritos ao domínio dos inteiros através de arredondamento.
+
+---
+![bg opacity](./background.png)
+<div class="cabecalho">
 Programação Inteira - Arredondamento
 </div>
 
 <div class="conteudo">
-Funciona em todos os casos?
+Mas, funciona em todos os casos?
 </div>
 
 ---
@@ -86,7 +158,7 @@ Programação Inteira - Arredondamento
 </div>
 
 <div class="conteudo">
-Funciona em todos os casos?
+Mas, funciona em todos os casos?
 <br>
 <br>
 <span style="font-size: 48px; font-weight: bold;">
@@ -99,7 +171,7 @@ Programação Inteira - Arredondamento
 </div>
 
 <div class="conteudo">
-Funciona em todos os casos?
+Mas, funciona em todos os casos?
 <br>
 <br>
 <span style="font-size: 48px; font-weight: bold;">
@@ -121,7 +193,7 @@ Programação Inteira - Arredondamento
 </div>
 
 <div class="conteudo">
-Funciona em todos os casos?
+Mas, funciona em todos os casos?
 <br>
 <br>
 <span style="font-size: 48px; font-weight: bold;">
@@ -139,7 +211,7 @@ Entretanto, a mesma realidade não se reproduz em pequenas magnitudes.
 
 ---
 ![bg opacity](./background.png)
-<h2 style="text-align: center"> Em geral, a regra de arredondar a solução não funciona muito bem, e portanto, não é um procedimento robusto para solucionar problemas de Programação Inteira. </h2>
+<h2 style="text-align: center"> A regra do arredondamento da solução não necessariamente conduz a soluções ótimas em todos os casos, e portanto, não é um procedimento robusto para solucionar problemas de Programação Inteira. </h2>
 
 ---
 ![bg opacity](./background.png)
@@ -190,7 +262,7 @@ $$ x_1 = 0, x_2 = 3 $$
 ---
 ![bg opacity](./background.png)
 # Como encontrar a solução ótima?
-## Através da força bruta!
+## Solução de problemas de programação inteira - Algoritmo Força Bruta!
 
 ---
 ![bg opacity](./background.png)
@@ -254,3 +326,16 @@ Um algoritmo de força bruta pode ser representado pelos seguintes passos:
 ![bg opacity](./background.png)
 <iframe src="https://mybinder.org/v2/gh/DiegoAscanio/aula-4-PO-2/master?labpath=forca_bruta.ipynb" width=100% height=100% ></iframe>
 <!--<iframe src="http://localhost:8888/notebooks/forca_bruta.ipynb" width=100% height=100% ></iframe>-->
+
+---
+![bg opacity](./background.png)
+# Resolução do problema das namoradas pelo Algoritmo de Força Bruta
+
+---
+![bg opacity](./background.png)
+<iframe src="https://mybinder.org/v2/gh/DiegoAscanio/aula-4-PO-2/master?labpath=namoradas_forca_bruta.ipynb" width=100% height=100% ></iframe>
+<!--<iframe src="http://localhost:8888/notebooks/namoradas_forca_bruta.ipynb" width=100% height=100% ></iframe>-->
+
+---
+![bg opacity](./background.png)
+# Próxima aula: Algoritmo Branch and Bound
