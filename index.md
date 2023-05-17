@@ -259,6 +259,8 @@ $$ x_1 = 0, x_2 = 3 $$
 <iframe src="https://mybinder.org/v2/gh/DiegoAscanio/aula-4-PO-2/master?labpath=simplex_insuficiencias.ipynb" width=100% height=100% ></iframe>
 <!--<iframe src="http://localhost:8888/notebooks/simplex_insuficiencias.ipynb" width=100% height=100% ></iframe>-->
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/diegoAscanio/aula-4-po-2/master)
+
 ---
 ![bg opacity](./background.png)
 # Como encontrar a solução ótima?
